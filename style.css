@@ -152,14 +152,15 @@ nav ul a svg {
 
 .services {
   text-align: center;
-  margin-top: 150px;
+  margin: 160px 0 180px;
   padding: 0 100px;
 }
 
-.services-container {
+.services-container,
+.portfolio-container {
   display: flex;
   margin-top: 60px;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 1200px;
   margin: 60px auto 0;
 }
@@ -184,6 +185,71 @@ nav ul a svg {
 .services .services-container .service-card img {
   margin: 15px 0 40px;
   width: 90px;
+}
+
+.portfolio {
+  padding: 0 100px;
+  text-align: center;
+  background: url("assets/portfolio-bg.png");
+  margin-bottom: 100px;
+}
+
+.portfolio .portfolio-container .portfolio-card {
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 255, 255, 0.33) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(42px);
+
+  border: 1px solid #fff;
+  border-radius: 16px;
+  max-width: 360px;
+  text-align: left;
+  padding: 50px 25px;
+}
+
+.portfolio-card + .portfolio-card {
+  margin-left: 10px;
+}
+
+.portfolio .portfolio-container .portfolio-card .img-container {
+  margin: 0 25px 50px;
+}
+
+.portfolio .portfolio-container .portfolio-card .img-container img {
+  width: 100%;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container {
+  margin-bottom: 20px;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul li {
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 16px;
+  padding: 3px 15px;
+}
+
+.portfolio-card .language-container ul li + li {
+  margin-left: 10px;
+}
+
+.portfolio-card p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.portfolio-card p + p {
+  font-size: 16px;
 }
 
 /* RESPONSIVIDADE */
