@@ -89,6 +89,7 @@ nav {
   position: sticky;
   top: 0;
   background: var(--bg-dark);
+  z-index: 99;
 }
 
 .logo {
@@ -157,15 +158,29 @@ nav ul a svg {
     width: 100%;
   }
 
-  header .container {
-  }
-
   nav {
     padding: 0 40px;
   }
 
   nav ul a {
     font-size: 18px;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+
+  .about-me .container,
+  .about-me .img-container {
+    width: 100%;
+  }
+
+  .about-me .container {
+    padding-right: 0;
+  }
+
+  .about-me .img-container {
+    margin-top: 70px;
   }
 }
 
@@ -215,5 +230,13 @@ nav ul a svg {
   nav ul a svg {
     display: block;
     margin: 0 auto 10px;
+  }
+
+  .about-me {
+    padding: 40px;
+  }
+
+  .about-me .img-container {
+    margin-bottom: 90px;
   }
 }
