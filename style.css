@@ -188,10 +188,15 @@ nav ul a svg {
 }
 
 .portfolio {
+  height: 800px;
   padding: 0 100px;
+  margin-bottom: 100px;
   text-align: center;
   background: url("assets/portfolio-bg.png");
-  margin-bottom: 100px;
+}
+
+.portfolio .portfolio-container {
+  margin-top: 130px;
 }
 
 .portfolio .portfolio-container .portfolio-card {
@@ -285,11 +290,13 @@ nav ul a svg {
     margin-top: 70px;
   }
 
-  .services {
+  .services,
+  .portfolio {
     padding: 0;
   }
 
-  .services .services-container {
+  .services .services-container,
+  .portfolio .portfolio-container {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
@@ -299,9 +306,14 @@ nav ul a svg {
     height: 394px;
   }
 
-  .service-card + .service-card {
+  .service-card + .service-card,
+  .portfolio-card + .portfolio-card {
     margin-left: 0;
     margin-top: 30px;
+  }
+
+  .portfolio {
+    height: 100%;
   }
 }
 
@@ -332,6 +344,10 @@ nav ul a svg {
 
 /* celular */
 @media (max-width: 480px) {
+  body {
+    margin-bottom: 115px;
+  }
+
   header .container {
     padding: 0 32px;
   }
@@ -357,7 +373,16 @@ nav ul a svg {
     padding: 40px;
   }
 
-  .services .services-container .service-card {
-    max-width: 90%;
+  .portfolio {
+    margin: 100px 0 50px;
+  }
+
+  .services-container,
+  .portfolio-container {
+    padding: 0 20px;
+  }
+
+  .portfolio .portfolio-container {
+    margin-top: 70px;
   }
 }
