@@ -52,6 +52,10 @@ button {
   font-size: 18px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .title-purple {
   color: var(--purple);
 }
@@ -284,7 +288,6 @@ nav ul a svg {
   display: grid;
   grid-template-columns: 150px auto;
   grid-gap: 1rem;
-  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -300,6 +303,37 @@ nav ul a svg {
 
 .secondary-button img {
   margin-right: 15px;
+}
+
+.contact {
+  max-width: 800px;
+  margin: 150px auto 70px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.contact h1 {
+  width: fit-content;
+  margin: 0 auto 40px;
+  background: -webkit-linear-gradient(#15cdcb, #5280e2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact button {
+  margin: 40px auto;
+}
+
+.contact .social-media {
+  max-width: 360px;
+  margin: 50px auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 /* RESPONSIVIDADE */
@@ -443,7 +477,13 @@ nav ul a svg {
     margin-top: 70px;
   }
 
+  .curriculum .container .content {
+    margin-left: 0px;
+  }
+
   .curriculum .container .content .curriculum-info {
     padding: 0 15px;
+    grid-template-columns: 100px auto;
+    font-size: 14px;
   }
 }
